@@ -1,46 +1,60 @@
-# Registro de Uso de Inteligência Artificial
+Registro de Uso de Inteligência Artificial
+Projeto: OrbitalWatch – Monitoramento de Detritos Espaciais
+Disciplina: Web Development
+Global Solution 2026 – FIAP – Engenharia de Software – 1º Ano
 
-**Projeto:** OrbitalWatch – Monitoramento de Detritos Espaciais  
-**Disciplina:** Web Development
-**Global Solution 2026 – FIAP – Engenharia de Software – 1º Ano**
+Interação 1
+O que foi solicitado para a IA:
+Precisávamos implementar quatro funcionalidades de interatividade em JavaScript puro
+na Landing Page do OrbitalWatch, sem usar nenhum framework externo (sem jQuery,
+React, Bootstrap etc.). Como ainda estamos aprendendo JavaScript, pedimos ajuda ao
+Claude (Anthropic) para entender como estruturar cada módulo e gerar uma base de
+código que pudéssemos estudar e adaptar.
+As quatro funcionalidades pedidas foram:
 
----
+1. Slideshow com 3 imagens, botões de anterior/próximo, indicadores clicáveis e
+troca automática a cada alguns segundos.
+2. Validação de formulário que bloqueasse o envio com campos vazios e verificasse
+o formato do e-mail antes de aceitar o envio.
+3. Quiz dinâmico com 10 perguntas sobre a indústria espacial, feedback visual por
+cor nas respostas e tela de resultado final com pontuação.
+4. Troca de tema com 3 opções (Dark, Light, Space) alterando variáveis CSS em
+tempo real.
 
-## Interação 1
 
-### O que foi solicitado para a IA
+O que a IA retornou
+A IA gerou o código JavaScript em quatro blocos separados, cada um usando função que se executa imediatamente para não misturar variáveis entre os módulos.
+Isso foi algo que não conhecíamos antes e aprendemos estudando o código gerado.
+Resumindo o que cada parte fez:
 
-Foi solicitado ao modelo **Claude Sonnet 4.6 (Anthropic)** que atuasse como desenvolvedor Front-End Sênior especialista em JavaScript puro (Vanilla JS) e implementasse quatro funcionalidades de interatividade para a Landing Page do projeto OrbitalWatch, sem uso de nenhum framework ou biblioteca externa (sem React, jQuery, Bootstrap etc.). As funcionalidades pedidas foram:
+- O theme switcher pega todos os botões com .theme-btn e ao clicar, muda o
+atributo data-theme do body, que ativa os estilos CSS correspondentes.
+- O slideshow controla qual slide está ativo por índice, atualiza as classes e os
+indicadores, e usa setInterval para avançar automaticamente. Ao clicar manual,
+reinicia o timer.
+- A validação intercepta o submit do formulário com e.preventDefault(),
+checa campos vazios com .trim() e valida o e-mail com uma expressão regular
+simples antes de liberar.
+- O quiz usa um array de objetos com pergunta, opções e índice da resposta certa.
+Uma função render() monta o HTML a cada pergunta, e showResult() exibe o
+placar final.
 
-1. **Slideshow (Carrossel):** com 3 slides temáticos sobre o espaço sideral, com botões de navegação (anterior/próximo), indicadores clicáveis e avanço automático a cada 4,5 segundos.
-2. **Validação de Formulário de Contato:** script que impede o envio quando algum campo (nome, e-mail ou mensagem) estiver vazio, além de validar o formato do e-mail via expressão regular, exibindo mensagens visuais de erro ou sucesso.
-3. **Quiz Dinâmico:** quiz com 10 perguntas sobre Indústria Espacial e Sustentabilidade, renderizado inteiramente via JavaScript (innerHTML), com feedback imediato por cor (verde = correto, vermelho = errado), barra de progresso e tela de resultado final com pontuação percentual e possibilidade de reiniciar.
-4. **Troca de Temas (Theme Switcher):** 3 botões (Dark / Light / Space) que alteram o atributo `data-theme` do `<body>`, ativando variáveis CSS distintas para cada tema, com transição suave de 0.4s.
+A IA também atualizou os arquivos index.html e css/style.css para incluir as
+novas seções (galeria, quiz e contato) e os estilos necessários para cada componente.
 
-Também foi solicitado que a IA gerasse o conteúdo completo dos arquivos `index.html`, `css/style.css` e `js/script.js`, dado que os arquivos do repositório estavam vazios, e que criasse este documento `AI.md` conforme exigência da disciplina.
+O que foi alterado ou rejeitado e o motivo
+O código gerado funcionou, mas fizemos alguns ajustes depois de testar no navegador:
 
----
+- O intervalo do slideshow estava em 4000ms e deixamos em 5000ms, achamos que
+ficava rápido demais pra quem está lendo o texto junto com a imagem.
+- A mensagem de erro do formulário quando o campo estava vazio estava bem seca
+("Preencha todos os campos"). Mudamos para um texto mais gentil, pedindo que o
+usuário preencha antes de enviar.
+- Revisamos as perguntas do quiz e ajustamos o enunciado de duas delas que estavam
+confusas — a IA gerou perguntas tecnicamente corretas, mas o texto ficou difícil
+de entender sem contexto.
+- Nenhuma funcionalidade foi rejeitada. Tudo que foi gerado foi aproveitado, com
+as adaptações acima.
 
-### O que a IA retornou
 
-A IA gerou três arquivos completos:
-
-**`js/script.js`**  
-Quatro módulos encapsulados em IIFEs (Immediately Invoked Function Expressions) para evitar poluição do escopo global:
-- `Theme Switcher`: `querySelectorAll('.theme-btn')` com event listeners que alteram `document.body.dataset.theme` e gerenciam a classe `active`.
-- `Slideshow`: controla índice atual (`current`), manipula classes `.active` nos slides e indicadores, e usa `setInterval` de 4500ms para avanço automático com `resetAutoPlay()` ao interagir manualmente.
-- `Form Validation`: captura o `submit`, chama `e.preventDefault()`, verifica campos vazios e valida e-mail com regex `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`, exibindo feedback no elemento `#form-message`.
-- `Quiz Dinâmico`: array de 10 objetos `{q, opts, a}`, função `render()` que reconstrói o HTML do quiz a cada pergunta, `pick()` para registrar resposta e aplicar classes `correct`/`wrong`, `advance()` para avançar e `showResult()` para exibir o placar final com classificação por faixa (≥80% = ótimo, ≥50% = bom, <50% = continue estudando).
-
-**`css/style.css`**  
-Arquivo completo com: reset CSS, variáveis CSS em `:root` para o tema dark padrão, overrides `body[data-theme="light"]` e `body[data-theme="space"]`, estilos do theme switcher, slideshow (posição absoluta + transição de opacidade), quiz (barra de progresso, opções com hover/disabled/correct/wrong, tela de resultado), formulário de contato (inputs, textarea, estados de foco, mensagens de erro/sucesso) e todos os estilos originais da Landing Page (navbar, hero, seções, cards, etc.).
-
-**`index.html`**  
-Arquivo completo com `data-theme="dark"` no `<body>`, três botões `.theme-btn` na navbar, três novas seções (`#galeria`, `#quiz`, `#contato`) além das seis seções obrigatórias da disciplina de Front-End Design, e `<script src="js/script.js"></script>` antes de `</body>`. Todas as imagens do slideshow possuem atributo `alt` descritivo.
-
----
-
-### O que foi alterado ou rejeitado e o motivo
-
->
- O intervalo do slideshow foi alterado de 4000ms para 5000ms para melhor usabilidade. A mensagem de erro ao faltar preencher os campos do formulário foi alterada para um tom mais educado. Nenhuma parte foi rejeitada, eu gostei bastante das mudanças que a IA trouxe. Todas as sugestões foram analisadas e adaptadas ao contexto do projeto OrbitalWatch.
+Ferramenta utilizada: Claude Sonnet 4.6 da Anthropic 
