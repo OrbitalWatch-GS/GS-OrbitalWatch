@@ -44,8 +44,4 @@ Arquivo completo com `data-theme="dark"` no `<body>`, três botões `.theme-btn`
 
 > **[Preencher após testar no navegador]**
 >
-> Exemplo: _"O intervalo do slideshow foi alterado de 4000ms para 4500ms para melhor usabilidade. A mensagem de sucesso do formulário foi traduzida para um tom mais formal. As perguntas 3 e 7 do quiz foram reformuladas para maior clareza. Nenhuma parte foi rejeitada."_
-
----
-
-*Gerado com auxílio de Claude Sonnet 4.6 – Anthropic | Data: 26/05/2026*
+> Exemplo: _"O intervalo do slideshow foi alterado de 4000ms para 5000ms para melhor usabilidade. A mensagem de erro ao faltar preencher os campos do formulário foi alterada para um tom mais educado. Nenhuma parte foi rejeitada, eu gostei bastante das mudanças que a IA trouxe."_
