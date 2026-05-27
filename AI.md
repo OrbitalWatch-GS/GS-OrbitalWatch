@@ -1,7 +1,7 @@
 # Registro de Uso de Inteligência Artificial
 
 **Projeto:** OrbitalWatch – Monitoramento de Detritos Espaciais  
-**Disciplina:** Web Development – Prof. Israel Marques  
+**Disciplina:** Web Development
 **Global Solution 2026 – FIAP – Engenharia de Software – 1º Ano**
 
 ---

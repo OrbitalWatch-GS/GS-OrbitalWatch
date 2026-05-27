@@ -1,7 +1,7 @@
 // ============================================================
 //   OrbitalWatch – Interatividade JavaScript
 //   Global Solution 2026 | FIAP | Engenharia de Software
-//   Disciplina: Web Development – Prof. Israel Marques
+//   Disciplina: Web Development
 // ============================================================
 
 // ── 1. THEME SWITCHER ────────────────────────────────────────
