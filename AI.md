@@ -42,6 +42,5 @@ Arquivo completo com `data-theme="dark"` no `<body>`, três botões `.theme-btn`
 
 ### O que foi alterado ou rejeitado e o motivo
 
-> **[Preencher após testar no navegador]**
 >
-> Exemplo: _"O intervalo do slideshow foi alterado de 4000ms para 5000ms para melhor usabilidade. A mensagem de erro ao faltar preencher os campos do formulário foi alterada para um tom mais educado. Nenhuma parte foi rejeitada, eu gostei bastante das mudanças que a IA trouxe."_
+ O intervalo do slideshow foi alterado de 4000ms para 5000ms para melhor usabilidade. A mensagem de erro ao faltar preencher os campos do formulário foi alterada para um tom mais educado. Nenhuma parte foi rejeitada, eu gostei bastante das mudanças que a IA trouxe. Todas as sugestões foram analisadas e adaptadas ao contexto do projeto OrbitalWatch.
