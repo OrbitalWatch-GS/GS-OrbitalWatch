@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OrbitalWatch – Monitoramento de Detritos Espaciais</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;600;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body data-theme="dark">
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-icon">★</span>
+                OrbitalWatch
+            </a>
+            <ul class="nav-links">
+                <li><a href="#problema">Problema</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#objetivos">Objetivos</a></li>
+                <li><a href="#publico">Público-alvo</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#aplicacao">Aplicação</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="theme-switcher" role="group" aria-label="Selecionar tema">
+                <button class="theme-btn active" data-theme="dark"  title="Tema Escuro">●</button>
+                <button class="theme-btn"        data-theme="light" title="Tema Claro">○</button>
+                <button class="theme-btn"        data-theme="space" title="Tema Espacial">✦</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <div class="hero-grid-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-tag">Global Solution 2026 · FIAP · Indústria Espacial</p>
+            <h1>ORBITAL<span class="accent">WATCH</span></h1>
+            <p class="hero-subtitle">
+                Monitoramento em tempo real de detritos orbitais.<br />
+                Protegendo a infraestrutura que move o mundo.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">27.000+</span>
+                    <span class="stat-label">detritos rastreados</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">7 km/s</span>
+                    <span class="stat-label">velocidade dos fragmentos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number">US$300M</span>
+                    <span class="stat-label">custo médio por satélite perdido</span>
+                </div>
+            </div>
+            <a href="#problema" class="btn-primary">Entender o problema →</a>
+        </div>
+        <div class="hero-orbit-visual" aria-hidden="true">
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="planet"></div>
+            <div class="debris d1"></div>
+            <div class="debris d2"></div>
+            <div class="debris d3"></div>
+            <div class="debris d4"></div>
+            <div class="debris d5"></div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 1 – PROBLEMA ===================== -->
+    <section id="problema" class="section">
+        <div class="section-container">
+            <div class="section-label">01 · Problema</div>
+            <h2 class="section-title">O lixo espacial ameaça<br /><span class="accent">tudo que depende de satélites</span></h2>
+            <div class="cards-grid">
+                <article class="card card-highlight">
+                    <div class="card-icon">⚠️</div>
+                    <h3>Síndrome de Kessler</h3>
+                    <p>Colisões geram novos detritos em cascata, tornando órbitas inacessíveis por décadas e colocando em risco toda a infraestrutura orbital existente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">📡</div>
+                    <h3>Serviços críticos em risco</h3>
+                    <p>GPS, previsão do tempo, internet e comunicações globais dependem de satélites. Um único impacto pode derrubar serviços usados por bilhões de pessoas.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">💸</div>
+                    <h3>Custo bilionário</h3>
+                    <p>Cada satélite destruído representa perda de US$100M a US$600M. Os seguros orbitais crescem 30% ao ano em resposta ao risco crescente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Monitoramento fragmentado</h3>
+                    <p>Operadores privados não têm acesso fácil aos dados de rastreamento orbital. As ferramentas existentes exigem equipes técnicas especializadas e custam caro.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 2 – TECNOLOGIA ===================== -->
+    <section id="tecnologia" class="section section-dark">
+        <div class="section-container">
+            <div class="section-label">02 · Tecnologia</div>
+            <h2 class="section-title">Stack técnica que<br /><span class="accent">move a plataforma</span></h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <span class="tech-badge">DADOS</span>
+                    <h3>NASA Space-Track</h3>
+                    <p>API pública com dados TLE de mais de 27.000 objetos rastreados em órbita terrestre, atualizada em tempo real.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">DADOS</span>
+                    <h3>ESA DISCOS</h3>
+                    <p>Catálogo europeu de objetos espaciais com informações detalhadas sobre detritos, fragmentações e eventos orbitais históricos.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">BACKEND</span>
+                    <h3>Python · Algoritmo de Conjunção</h3>
+                    <p>Modelos matemáticos de probabilidade de colisão baseados em funções exponenciais, calculando risco por distância e velocidade relativa.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">FRONTEND</span>
+                    <h3>Dashboard Web</h3>
+                    <p>Interface HTML, CSS e JavaScript puro com mapa orbital 2D, alertas visuais em tempo real e painel de gestão de missões.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">EDGE</span>
+                    <h3>Arduino · Sistema Embarcado</h3>
+                    <p>Simulação de alerta de bordo de nanossatélite: sensor ultrassônico detecta "detritos" e aciona LEDs de status de risco em tempo real.</p>
+                </div>
+                <div class="tech-item">
+                    <span class="tech-badge">ENTREGA</span>
+                    <h3>SaaS B2B</h3>
+                    <p>Plataforma como serviço para operadores de satélites, com planos escaláveis e API REST para integração com sistemas de telemetria.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 3 – OBJETIVOS ===================== -->
+    <section id="objetivos" class="section">
+        <div class="section-container">
+            <div class="section-label">03 · Objetivos</div>
+            <h2 class="section-title">O que o OrbitalWatch<br /><span class="accent">pretende alcançar</span></h2>
+            <div class="objectives-list">
+                <div class="objective-item">
+                    <span class="objective-number">01</span>
+                    <div class="objective-body">
+                        <h3>Centralizar dados orbitais abertos</h3>
+                        <p>Agregar em uma única plataforma os dados de rastreamento da NASA, ESA e INPE, eliminando a necessidade de múltiplas ferramentas técnicas.</p>
+                    </div>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-number">02</span>
+                    <div class="objective-body">
+                        <h3>Automatizar alertas de risco de colisão</h3>
+                        <p>Emitir notificações proativas quando a probabilidade de colisão superar 1:10.000, com antecedência suficiente para planejamento de manobra.</p>
+                    </div>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-number">03</span>
+                    <div class="objective-body">
+                        <h3>Democratizar o acesso ao monitoramento orbital</h3>
+                        <p>Tornar acessível a operadores de médio porte o que hoje só está disponível para grandes agências governamentais com equipes especializadas.</p>
+                    </div>
+                </div>
+                <div class="objective-item">
+                    <span class="objective-number">04</span>
+                    <div class="objective-body">
+                        <h3>Contribuir com os ODS da ONU</h3>
+                        <p>Proteger a infraestrutura orbital que sustenta os ODS 9 (Inovação), ODS 11 (Cidades Inteligentes) e ODS 13 (Ação Climática).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 4 – PÚBLICO-ALVO ===================== -->
+    <section id="publico" class="section section-dark">
+        <div class="section-container">
+            <div class="section-label">04 · Público-alvo</div>
+            <h2 class="section-title">Quem o OrbitalWatch<br /><span class="accent">foi feito para proteger</span></h2>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">🛰️</div>
+                    <h3>Operadores de Satélites Comerciais</h3>
+                    <p>Empresas como SpaceX, Planet Labs e Telesat que operam frotas orbitais e precisam monitorar riscos de colisão para proteger ativos de alto valor.</p>
+                </div>
+                <div class="audience-card audience-card-featured">
+                    <div class="audience-icon">🏛️</div>
+                    <h3>Agências Espaciais</h3>
+                    <p>NASA, ESA e JAXA que gerenciam missões tripuladas e não-tripuladas em órbitas cada vez mais congestionadas e precisam de dados integrados.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">📶</div>
+                    <h3>Empresas de Telecomunicações</h3>
+                    <p>Operadoras que dependem de satélites geoestacionários para conectividade global e não podem tolerar interrupções por colisões evitáveis.</p>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">🔬</div>
+                    <h3>Pesquisadores e Universidades</h3>
+                    <p>Instituições que estudam sustentabilidade orbital e precisam de acesso a dados históricos e em tempo real para análise e publicação científica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 5 – BENEFÍCIOS ===================== -->
+    <section id="beneficios" class="section">
+        <div class="section-container">
+            <div class="section-label">05 · Benefícios</div>
+            <h2 class="section-title">Por que escolher<br /><span class="accent">o OrbitalWatch</span></h2>
+            <div class="benefits-wrapper">
+                <div class="benefits-list">
+                    <div class="benefit-row">
+                        <span class="benefit-check">✓</span>
+                        <div>
+                            <h3>Alertas automatizados em menos de 5 minutos</h3>
+                            <p>Detecção e notificação de risco de colisão muito mais rápida que os processos manuais atuais das agências.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-check">✓</span>
+                        <div>
+                            <h3>Redução de custos operacionais</h3>
+                            <p>Manobras de desvio planejadas com antecedência consomem menos combustível e custam até 10x menos que manobras emergenciais.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-check">✓</span>
+                        <div>
+                            <h3>Interface acessível sem equipe técnica</h3>
+                            <p>Dashboard intuitivo que dispensa especialistas em mecânica orbital — qualquer operador consegue interpretar os dados.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-check">✓</span>
+                        <div>
+                            <h3>Dados abertos, custo acessível</h3>
+                            <p>Baseado em APIs públicas da NASA e ESA, o OrbitalWatch oferece monitoramento profissional a uma fração do custo das soluções proprietárias.</p>
+                        </div>
+                    </div>
+                    <div class="benefit-row">
+                        <span class="benefit-check">✓</span>
+                        <div>
+                            <h3>Histórico e conformidade regulatória</h3>
+                            <p>Registro de todos os alertas e manobras em formato exportável para relatórios de conformidade com agências reguladoras espaciais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="benefits-visual" aria-hidden="true">
+                    <div class="radar-ring r1"></div>
+                    <div class="radar-ring r2"></div>
+                    <div class="radar-ring r3"></div>
+                    <div class="radar-center">
+                        <span>★</span>
+                        <p>SISTEMA<br />ATIVO</p>
+                    </div>
+                    <div class="radar-blip b1"></div>
+                    <div class="radar-blip b2"></div>
+                    <div class="radar-blip b3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 6 – APLICAÇÃO NO DIA A DIA ===================== -->
+    <section id="aplicacao" class="section section-dark">
+        <div class="section-container">
+            <div class="section-label">06 · Aplicação no dia a dia</div>
+            <h2 class="section-title">Como o OrbitalWatch<br /><span class="accent">funciona na prática</span></h2>
+            <div class="flow-grid">
+                <div class="flow-step">
+                    <div class="flow-number">1</div>
+                    <h3>Acesso ao Dashboard</h3>
+                    <p>O operador acessa a plataforma e visualiza em tempo real a posição de seus satélites e todos os objetos orbitais próximos.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">2</div>
+                    <h3>Detecção de Risco</h3>
+                    <p>O sistema detecta automaticamente qualquer objeto com probabilidade de colisão acima de 1:10.000 e emite alerta imediato.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">3</div>
+                    <h3>Planejamento da Manobra</h3>
+                    <p>A calculadora de manobra sugere janelas de tempo e estima o combustível necessário para cada opção de desvio disponível.</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-number">4</div>
+                    <h3>Registro e Relatório</h3>
+                    <p>Toda decisão é registrada no histórico da missão, gerando relatórios automáticos para fins de conformidade regulatória.</p>
+                </div>
+            </div>
+            <div class="cta-box">
+                <p>Um sistema que protege bilhões em ativos orbitais — e os serviços que bilhões de pessoas usam todos os dias.</p>
+                <span class="cta-tag">ODS 9 · ODS 11 · ODS 13</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 7 – GALERIA (SLIDESHOW) ===================== -->
+    <section id="galeria" class="section">
+        <div class="section-container">
+            <div class="section-label">07 · Galeria</div>
+            <h2 class="section-title">A órbita em<br /><span class="accent">imagens</span></h2>
+            <div class="slideshow" role="region" aria-label="Galeria de imagens do OrbitalWatch">
+                <div class="slideshow-track">
+
+                    <div class="slide active slide-bg-1">
+                        <img src="img/slide1.jpg" alt="Detritos espaciais em órbita baixa da Terra vistos do espaço — representação artística" />
+                        <div class="slide-caption">
+                            <h3>Órbita Cada Vez Mais Congestionada</h3>
+                            <p>Mais de 27.000 objetos rastreáveis circulam a Terra, ameaçando satélites operacionais em todas as camadas orbitais.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide slide-bg-2">
+                        <img src="img/slide2.jpg" alt="Satélite artificial em órbita com a Terra ao fundo — infraestrutura orbital crítica" />
+                        <div class="slide-caption">
+                            <h3>Satélites que Movem o Mundo</h3>
+                            <p>GPS, internet e monitoramento climático dependem de órbitas limpas. Proteger esses ativos é proteger a civilização conectada.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide slide-bg-3">
+                        <img src="img/slide3.jpg" alt="Painel de monitoramento de missão espacial com dados orbitais em tempo real" />
+                        <div class="slide-caption">
+                            <h3>Tecnologia que Protege o Futuro</h3>
+                            <p>O OrbitalWatch automatiza a vigilância orbital, tornando o espaço mais seguro e acessível para toda a humanidade.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="slide-btn" id="slide-prev" aria-label="Slide anterior">&#8592;</button>
+                <button class="slide-btn slide-btn-next" id="slide-next" aria-label="Próximo slide">&#8594;</button>
+
+                <div class="slide-indicators" role="tablist" aria-label="Navegação do slideshow">
+                    <button class="slide-indicator active" role="tab" aria-label="Ir para slide 1" aria-selected="true"></button>
+                    <button class="slide-indicator"        role="tab" aria-label="Ir para slide 2" aria-selected="false"></button>
+                    <button class="slide-indicator"        role="tab" aria-label="Ir para slide 3" aria-selected="false"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 8 – QUIZ ===================== -->
+    <section id="quiz" class="section section-dark">
+        <div class="section-container">
+            <div class="section-label">08 · Quiz</div>
+            <h2 class="section-title">Teste seus conhecimentos<br /><span class="accent">sobre o espaço</span></h2>
+            <div class="quiz-wrapper">
+                <div id="quiz-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SEÇÃO 9 – CONTATO ===================== -->
+    <section id="contato" class="section">
+        <div class="section-container">
+            <div class="section-label">09 · Contato</div>
+            <h2 class="section-title">Fale com<br /><span class="accent">a equipe</span></h2>
+            <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="field-name">Nome completo</label>
+                    <input type="text" id="field-name" placeholder="Seu nome completo" autocomplete="name" />
+                </div>
+                <div class="form-group">
+                    <label for="field-email">E-mail</label>
+                    <input type="email" id="field-email" placeholder="seu@email.com" autocomplete="email" />
+                </div>
+                <div class="form-group">
+                    <label for="field-message">Mensagem</label>
+                    <textarea id="field-message" rows="5" placeholder="Descreva sua dúvida ou proposta..."></textarea>
+                </div>
+                <div id="form-message" class="form-message" role="alert" aria-live="polite"></div>
+                <button type="submit" class="btn-primary">Enviar mensagem →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ===================== RODAPÉ ===================== -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <span class="logo-icon">★</span>
+                <span>OrbitalWatch</span>
+            </div>
+            <p class="footer-desc">Global Solution 2026 · FIAP · Engenharia de Software · 1º Ano</p>
+            <div class="footer-team">
+                <span>João Pedro · RM570509</span>
+                <span>Gustavo · RM570708</span>
+                <span>João Pedro L. · RM569444</span>
+                <span>Lucas · RM572216</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
