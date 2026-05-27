@@ -42,7 +42,7 @@
     }
 
     function autoPlay() {
-        timer = setInterval(() => goTo(current + 1), 4500);
+        timer = setInterval(() => goTo(current + 1), 5000);
     }
 
     function resetAutoPlay() {
@@ -77,7 +77,7 @@
         msgEl.className = 'form-message';
 
         if (!name || !email || !message) {
-            msgEl.textContent = '⚠ Preencha todos os campos antes de enviar.';
+            msgEl.textContent = '⚠ Por favor, preencha todos os campos antes de enviar.';
             msgEl.classList.add('error');
             return;
         }
