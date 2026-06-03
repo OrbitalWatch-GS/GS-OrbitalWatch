@@ -102,7 +102,7 @@
     const questions = [
         {
             q: 'Quantos detritos espaciais rastreáveis existem atualmente em órbita terrestre?',
-            opts: ['Cerca de 5.000', 'Mais de 27.000', 'Menos de 1.000', 'Cerca de 100.000'],
+            opts: ['Mais de 27.000', 'Mais de 40.000', 'Menos de 1.000', 'Cerca de 100.000'],
             a: 1
         },
         {
@@ -126,8 +126,8 @@
             a: 2
         },
         {
-            q: 'Qual API fornece dados TLE (Two-Line Element) de objetos rastreados em órbita?',
-            opts: ['Google Maps API', 'NASA Space-Track', 'Open Weather Map API', 'ESA Climate Data Store'],
+            q: 'Qual fonte fornece dados públicos sobre os objetos rastreados em órbita?',
+            opts: ['Google Maps API', 'Dados abertos da NASA e ESA', 'Open Weather Map API', 'Spotify API'],
             a: 1
         },
         {
