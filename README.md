@@ -11,7 +11,7 @@ milhões de dólares.
 
 ## 🎯 Problema
 
-Existem mais de 27.000 detritos rastreados em órbita terrestre, viajando a 7 km/s.
+Existem mais de 40.000 objetos rastreados em órbita terrestre, viajando a cerca de 7 km/s.
 Um único impacto pode destruir um satélite e interromper serviços críticos como GPS,
 internet e previsão do tempo usados por bilhões de pessoas.
 
